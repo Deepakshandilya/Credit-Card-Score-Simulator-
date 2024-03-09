@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Information Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+    }
+    form {
+        max-width: 500px;
+        margin: 20px auto;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    }
+    h2 {
+        text-align: center;
+        color: #333333;
+    }
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<form>
+    <h2>User Information Form</h2>
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+
+    <label for="ownCar">Own Car:</label>
+    <select id="ownCar" name="ownCar">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+
+    <label for="children">Children:</label>
+    <input type="number" id="children" name="children" min="0" max="5">
+
+    <label for="totalIncome">Total Income:</label>
+    <input type="text" id="totalIncome" name="totalIncome">
+
+    <label for="incomeType">Income Type:</label>
+    <input type="text" id="incomeType" name="incomeType">
+
+    <label for="familyStatus">Family Status:</label>
+    <input type="text" id="familyStatus" name="familyStatus">
+
+    <label for="housingType">Housing Type:</label>
+    <select id="housingType" name="housingType">
+        <option value="rent">Rent</option>
+        <option value="own">Own</option>
+    </select>
+
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone" name="phone">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <label for="occupationType">Occupation Type:</label>
+    <input type="text" id="occupationType" name="occupationType">
+
+    <label for="familyMembers">Family Members:</label>
+    <input type="number" id="familyMembers" name="familyMembers" min="0" max="10">
+
+    <label for="educationLevel">Education Level:</label>
+    <select id="educationLevel" name="educationLevel">
+        <option value="matriculation">Matrix</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="undergrad">Undergraduate</option>
+        <option value="postgrad">Postgraduate</option>
+    </select>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
