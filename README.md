@@ -2,16 +2,37 @@
 
 ## Table of Contents
 - [Project Description](#project-description)
+- [Running the Application](#running-the-application)
+- [Docker Pull Command](#docker-pull-command)
 - [Project Components](#project-components)
 - [Project Goals](#project-goals)
 - [Additional Considerations](#additional-considerations)
 - [Tech Stack](#tech-stack)
-- [Running the Application](#running-the-application)
-- [Installing Requirements](#installing-requirements)
-- [Docker Deployment](#docker-deployment)
+
 
 ## Project Description
 Develop and deploy a credit scoring model for assessing the creditworthiness of loan applicants. The project involves building a machine learning model, deploying it as a microservice on AWS, and implementing robust monitoring and alerting mechanisms to ensure the reliability and performance of the scoring system.
+
+## Running the Application
+1. Clone the repository:
+   ```bash
+   git clone <repository_url>
+
+2. Install requirements
+   ```bash
+   pip install -r requirements.txt
+   
+3. Create virtual environment
+   ```bash
+   pip install virtualenv
+   python -m venv venv
+   venv\Scripts\activate
+
+## Docker Pull Command
+To pull the latest version of the credit scoring simulator image from Docker Hub, use the following command:
+
+   
+      docker pull deepakshandilya/credit-scoring-simulator:latest
 
 ## Project Components
 ### a) Credit Scoring Model Development
@@ -81,7 +102,5 @@ Here's a suggested tech stack for the Credit Scoring Model Deployment and Monito
 
 This tech stack leverages a combination of popular open-source tools and managed services provided by AWS to develop, deploy, and monitor the credit scoring model in a reliable, scalable, and compliant manner.
 
-## Running the Application
-1. Clone the repository:
-   ```bash
-   git clone <repository_url>
+
+
