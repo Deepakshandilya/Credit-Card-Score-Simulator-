@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loan Application Form</title>
+</head>
+<body>
+    <h2>Loan Application Form</h2>
+    <form id="loanForm">
+        <label for="code_gender">Gender:</label>
+        <select id="code_gender" name="code_gender" required>
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select>
+
+        <!-- Other form fields -->
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="predictionResult"></div>
+
+    <script>
+        const form = document.getElementById('loanForm');
+        const resultDiv = document.getElementById('predictionResult');
+
+        form.addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            const formData = new FormData(form);
+            const response = await fetch('/submit_loan_application', {
+                method: 'POST',
+                body: formData
+            });
+
+            const data = await response.json();
+            resultDiv.textContent = `Prediction: ${data.prediction}`;
+        });
+    </script>
+</body>
+</html>
