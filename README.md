@@ -1,6 +1,6 @@
 # Credit Scoring Model Deployment and Monitoring
 
-## Table of Contents
+## Table of Contents 
 - [Project Description](#project-description)  
 - [Running the Application](#running-the-application)
 - [Docker Pull Command](#docker-pull-command)
